@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.NChartController">
+   <top>
+      <VBox prefHeight="166.0" prefWidth="550.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane alignment="CENTER" prefHeight="116.0" prefWidth="550.0" style="-fx-background-color: #EFFBF5;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="111.0" prefWidth="552.0" spacing="100.0">
+                     <children>
+                        <ImageView fitHeight="58.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/이용권.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/mainLogo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="119.0" onMouseClicked="#loginPP" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/로그인.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </FlowPane>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="550.0">
+               <children>
+                  <Label fx:id="Mhome" alignment="CENTER" maxHeight="60.0" onMouseClicked="#homeClick" prefHeight="60.0" prefWidth="150.0" text="HOME" />
+                  <Label fx:id="Mpopular" alignment="CENTER" onMouseClicked="#popularClick" prefHeight="60.0" prefWidth="150.0" text="인기차트" />
+                  <Label fx:id="Mrecent" alignment="CENTER" onMouseClicked="#recentClick" prefHeight="60.0" prefWidth="150.0" text="최신음악" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox fx:id="footerBar" alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="90.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="homeIcon" fitHeight="150.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/home(off).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="popularIcon" fitHeight="150.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/trophy(off).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="searchIcon" fitHeight="150.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/search(off).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="myListIcon" fitHeight="150.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/보관함(off).png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane fx:id="centerPane" prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

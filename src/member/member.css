@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Jua;
+    src: url('../../fonts/Jua-Regular.ttf');
+}
+@font-face {
+    font-family: NotoSansKR-Bold;
+    src: url('../../fonts/NoToSansKR-Bold.otf');
+}
+@font-face {
+    font-family: NotoSansKR-Regular;
+    src: url('../../fonts/NoToSansKR-Regular.otf');
+}
+
+
+/* login.fxml */
+.button{
+	-fx-background-color: #CEF6D8;
+	-fx-border-color: #088A4B;
+	-fx-border-width: 1.2px;
+	-fx-border-radius: 2px;
+}
+.button:hover {
+    -fx-background-color: #01DF74; 
+}
+
+
+/* myPage.fxml */
+#myPageName{
+	-fx-font-family: 'Noto Sans KR'; 
+}
+#myPageId{
+	-fx-font-family: 'Noto Sans KR'; 
+}
+#myPageAge{
+	-fx-font-family: 'Noto Sans KR'; 
+}
+
+
+/* register.fxml */
+#registerTitle{
+	-fx-font-family: 'Noto Sans KR BOld'; 
+}
+
+
+
+
+
+
+
+
+

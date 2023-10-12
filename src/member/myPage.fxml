@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="member.MypageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="211.0" prefWidth="500.0">
+         <children>
+            <ImageView fx:id="myPageImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/user.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="108.0" prefWidth="500.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="390.0" spacing="10.0">
+               <children>
+                  <Label fx:id="myPageName" text="이    름 : ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="nameBox" prefHeight="100.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets left="180.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="390.0" spacing="10.0">
+               <children>
+                  <Label fx:id="myPageId" text="아이디 : ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="userId" prefHeight="100.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets left="180.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="390.0" spacing="10.0">
+               <children>
+                  <Label fx:id="myPageAge" text="연령대 : ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="userAge" prefHeight="100.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets left="180.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="130.0" prefWidth="500.0" spacing="30.0">
+         <children>
+            <Button fx:id="memUpdate" mnemonicParsing="false" onAction="#myPUProc" prefHeight="50.0" prefWidth="120.0" text="회원정보 수정" />
+            <Button fx:id="memDelete" mnemonicParsing="false" onAction="#myDelete" prefHeight="50.0" prefWidth="120.0" text="회원탈퇴" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MusicPlayController">
+	<top>
+		<VBox alignment="BOTTOM_CENTER" prefHeight="122.0" prefWidth="450.0" BorderPane.alignment="BOTTOM_CENTER">
+			<children>
+				<Label fx:id="songLabel" alignment="CENTER" prefHeight="51.0" prefWidth="350.0" text="제목">
+					<font>
+						<Font size="19.0" />
+					</font>
+				</Label>
+				<Label fx:id="singer" alignment="TOP_CENTER" prefHeight="37.0" prefWidth="350.0" text="가수" />
+			</children>
+		</VBox>
+	</top>
+	<bottom>
+		<VBox prefHeight="169.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+			<children>
+				<MediaView fx:id="mediaView" fitHeight="2.0" fitWidth="287.0" opacity="0.0" />
+            	<Slider fx:id="seekBar" prefHeight="14.0" prefWidth="269.0">
+	           		<VBox.margin>
+                  <Insets left="60.0" right="60.0" />
+	              </VBox.margin>
+	           </Slider>
+            <HBox alignment="CENTER" prefHeight="23.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="playTime" text="0:00">
+                     <HBox.margin>
+                        <Insets right="230.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="totalTime" text="0:00" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="previousButton" mnemonicParsing="false" onAction="#previousMedia" prefHeight="33.0" prefWidth="30.0" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/arrowHead_left.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ToggleButton fx:id="playButton" mnemonicParsing="false" onAction="#playMedia" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fx:id="playMediaImage" fitHeight="25.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/play.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <Button fx:id="nextButton" mnemonicParsing="false" onAction="#nextMedia" prefHeight="33.0" prefWidth="30.0" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/arrowHead_right.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+			</children>
+		</VBox>
+	</bottom>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="282.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="albumImage" fitHeight="242.0" fitWidth="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/rect.jpg" />
+               </image></ImageView>
+            <HBox prefHeight="66.0" prefWidth="400.0">
+               <children>
+                  <ToggleButton fx:id="heartBtn" mnemonicParsing="false" onAction="#clickHeart" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fx:id="heartImage" fitHeight="25.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/heartLine.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <Label prefHeight="33.0" prefWidth="73.0" text="좋아요" />
+                  <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addMusic" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+
+</BorderPane>

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Jua;
+    src: url('../../fonts/Jua-Regular.ttf');
+}
+@font-face {
+    font-family: NotoSansKR-Bold;
+    src: url('../../fonts/NoToSansKR-Bold.otf');
+}
+@font-face {
+    font-family: NotoSansKR-Regular;
+    src: url('../../fonts/NoToSansKR-Regular.otf');
+}
+
+/* Lmain */
+#Mhome{
+	-fx-font-family: 'Jua Regular'; 
+	-fx-font-size: 20px;
+}
+#Mpopular{
+	-fx-font-family: 'Jua Regular'; 
+	-fx-font-size: 20px;
+}
+#Mrecent{
+	-fx-font-family: 'Jua Regular'; 
+	-fx-font-size: 20px;
+}
+#Mplaylist{
+	-fx-font-family: 'Jua Regular'; 
+	-fx-font-size: 20px;
+}
+#M_Myplaylist{
+	-fx-font-family: 'Jua Regular'; 
+	-fx-font-size: 20px;
+}
+
+
+/* Nhome */
+#NhomeLabel1{
+	-fx-font-family: 'Noto Sans KR'; 
+	-fx-font-weight: 600;
+	-fx-font-size: 18px;
+}
+#NhomeLabel2{
+	-fx-font-family: 'Noto Sans KR'; 
+	-fx-font-weight: 600;
+	-fx-font-size: 18px;
+}
+#NhomeLabel3{
+	-fx-font-family: 'Noto Sans KR'; 
+	-fx-font-weight: 600;
+	-fx-font-size: 18px;
+}
+
+.Pane:selected { 
+    -fx-border-color: #088A4B; 
+    -fx-border-width: 1.5px;
+}
+
+/* musicPlay.fxml */
+#songLabel{
+	-fx-font-family: 'Noto Sans KR';	
+	-fx-font-size: 25px;
+}
+#singer{
+	-fx-font-family: 'Noto Sans KR';	
+	-fx-font-size: 15px;
+}
+
+

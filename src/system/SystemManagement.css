@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Jua;
+    src: url('../../fonts/Jua-Regular.ttf');
+}
+@font-face {
+    font-family: NotoSansKR-Bold;
+    src: url('../../fonts/NoToSansKR-Bold.otf');
+}
+@font-face {
+    font-family: NotoSansKR-Regular;
+    src: url('../../fonts/NoToSansKR-Regular.otf');
+}
+
+#systemTitle{
+	-fx-font-family: 'Noto Sans KR Bold'; 
+	-fx-font-size: 38px;
+}
+
+#label1{
+	-fx-font-family: 'Noto Sans KR'; 
+	-fx-font-size: 14px;
+}
+#label2{
+	-fx-font-family: 'Noto Sans KR'; 
+	-fx-font-size: 14px;
+}
+#label3{
+	-fx-font-family: 'Noto Sans KR'; 
+	-fx-font-size: 14px;
+}
+#label4{
+	-fx-font-family: 'Noto Sans KR'; 
+	-fx-font-size: 14px;
+}
+
+
+.button{
+	-fx-background-color: #CEF6D8;
+	-fx-border-color: #088A4B;
+	-fx-border-width: 1.2px;
+	-fx-border-radius: 2px;
+
+}
+.button:hover {
+    -fx-background-color: #01DF74; 
+}
+
+.table-row-cell {
+    -fx-background-color: #EFFBF5;
+}
+.table-cell {
+    -fx-text-fill: black;
+    -fx-padding: 0 0 0 5px;
+    -fx-font-weight: 100;
+    -fx-border-color: #0A2A12;
+    -fx-border-width: 0.08px;
+}
+.table-row-cell:hover {
+    -fx-background-color: #CEF6CE;
+}
+.table-row-cell:selected {
+    -fx-background-color: #CEF6CE;
+}
+
+#SmemberList {
+    -fx-border-color: #088A4B; 
+    -fx-border-width: 1.5px;
+}
+#SmusicList {
+    -fx-border-color: #088A4B; 
+    -fx-border-width: 1.5px;
+}
+
+
+
+/*
+@font-face {
+    font-family: Jua;
+    src: url('../../fonts/Jua-Regular.ttf');
+}
+
+#systemTitle{
+	-fx-font-family: 'Jua Regular'; 
+	-fx-font-size: 50px;
+}
+*/
+
+/*
+@font-face {
+    font-family: NotoSansKR-Bold;
+    src: url('../../fonts/NoToSansKR-Bold.otf');
+}
+
+#systemTitle{
+	-fx-font-family: 'Noto Sans KR'; 
+	-fx-font-size: 40px;
+}
+*/
+
+/* 
+@font-face {
+    font-family: GamjaFlower;
+    src: url('../../fonts/GamjaFlower-Regular.ttf');
+}
+
+#systemTitle{
+	-fx-font-family: 'Gamja Flower'; 
+}.root{
+	-fx-font-family: 'Gamja Flower'; 
+}
+*/
